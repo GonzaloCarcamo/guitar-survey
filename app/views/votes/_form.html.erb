@@ -1,0 +1,12 @@
+<%= form_with(model: @vote, local: true) do |form|%>
+    
+    <div class="field>
+    <%= form.label "Select a Product" %><br />
+    <%= form.radio_button(:option, true) %>
+    <%= form.label(:option, "Fender") %><br />
+    <%= form.radio_button(:option, false) %>
+    <%= form.label(:option, "Gibson") %><br />
+    <%= form.submit %>
+    </div>
+
+<% end %>
